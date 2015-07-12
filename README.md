@@ -1,9 +1,10 @@
 # summerjournal2015
 ### 7.11 
- 开始阅读greenlet
+* 开始阅读greenlet
 >> (http://segmentfault.com/a/1190000000723209)[greenlet源码阅读]
 >> (https://code.google.com/p/libhjw/wiki/notes_on_greenlet)[greenlet]
 >> (http://blog.csdn.net/fjslovejhl/article/details/38824963)[greenlet]
+
 ### 7.12
 * 停电到PM8::00
 * 上午看了一些《离散数学及其应用》，觉得应该找到中文版对照看
