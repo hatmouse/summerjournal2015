@@ -16,3 +16,12 @@
 >>  // Macro to get a random integer with a specified range <br>
 >>  #define getrandom(min, max) \ <br>
 >>  ((rand()%(int)(((max) + 1)-(min)))+ (min))
+
+### 7.13
+* 了解到stack和heap的区别
+* 阅读关于引用计数相关的文章，完成整理
+
+Python管理内存的三种方法
+1. 引用计数器机制
+2. 垃圾回收机制
+3. 内存池机制
