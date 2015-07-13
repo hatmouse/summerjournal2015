@@ -8,6 +8,7 @@
     The only real reason to use the reference count is to prevent the object from being deallocated as long as our variable is pointing to it
 ## 所有权规则
 [Extending Python with C or C++](http://www.incoding.org/admin/archives/808.html)
+
 大多数返回对象引用的函数，通过引用传递所有权。
 * 许多从**其他对象上提取子对象**的函数，通过引用传递所有权，但有一些例外，**PyTuple_GetItem(),PyList_GetItem(),PyDict_GetItem()，和PyDict_GetItemString()**，这些返回的引用是从tuple，list或dict中**借用**的.(借用仅获得拷贝，引用计数并不增加)
 * 当你传递一个对象引用给其他函数，这个函数会从借用这个引用，如果需要保存它应该使用Py_INCREF()转换为独立拥有者。但是有例外，**PyTuple_SetItem()和PyList_SetItem()**，直接传递对象所有权
@@ -30,7 +31,6 @@
 * Py_InitModule3()
 * Py_InitModule4()
 * PySequence_Fast_GET_ITEM()
-```
 
 ##引用计数 ob_refcnt
 ```
@@ -60,7 +60,9 @@ typedef struct _object {
 
 #When to Use Py_INCREF() and Py_DECREF()
 [Reference Counting in Python](http://edcjones.tripod.com/refcount.html)
+
 ##函数返回对象
+
 PyObject* Py_Something(arguments);
 绝大部分函数会在返回新对象之前调用Py_INCREF
 MyCode必须处理pyo，调用Py_DECREF
@@ -86,7 +88,9 @@ PyObject* MyCode(arguments) {
 }
 ```
 如果一个函数返回None，需要INCREF(Py_None)
+
 [Py_INCREF(Py_None) from stackoverflow](http://stackoverflow.com/questions/15287590/why-should-py-increfpy-none-be-required-before-returning-py-none-in-c)
+
 ```
 Py_INCREF(Py_None);
 return Py_None;
