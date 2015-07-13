@@ -1,9 +1,9 @@
 #Introduction
-    Python/C API通常用在为Python解释器写扩展或者嵌入Python
-    为Python写扩展比嵌入Python简单一些，并且大部分在写嵌入Python时同样需要写扩展
+Python/C API通常用在为Python解释器写扩展或者嵌入Python
+为Python写扩展比嵌入Python简单一些，并且大部分在写嵌入Python时同样需要写扩展
 #头文件
-    在写程序时应该包含Python.h
-    在Python.h中定义的所有用户可见的名字都是以Py或者_Py为前缀.其中以_Py开头的名字是Python解释器内部使用并且扩展编写者不应该使用
+在写程序时应该包含Python.h
+在Python.h中定义的所有用户可见的名字都是以Py或者_Py为前缀.其中以_Py开头的名字是Python解释器内部使用并且扩展编写者不应该使用
 #Reference Count
     The only real reason to use the reference count is to prevent the object from being deallocated as long as our variable is pointing to it
 ## 所有权规则
@@ -30,9 +30,9 @@
 * Py_InitModule3()
 * Py_InitModule4()
 * PySequence_Fast_GET_ITEM()
-```
 
 ##引用计数 ob_refcnt
+
 ```
 typedef struct _object {
     _PyObject_HEAD_EXTRA
