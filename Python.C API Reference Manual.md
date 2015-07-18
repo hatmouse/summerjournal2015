@@ -281,6 +281,6 @@ This is the same as Example 1 except PyTuple_GetItem() is used.
         return return_this;
     }
 ```
-Note 1: If PyTuple_SetItem fails or if the tuple it created is DECREFed to 0, then the object returned by **PyInt_FromLong is DECREFed**.
-Note 2: PyTuple_Getitem does not increment the reference count for the object it returns.
-Note 3: You have no responsibility for DECFREFing temporary.
+* Note 1: If PyTuple_SetItem fails or if the tuple it created is DECREFed to 0, then the object returned by **PyInt_FromLong is DECREFed**.
+* Note 2: PyTuple_Getitem does not increment the reference count for the object it returns.
+* Note 3: You have no responsibility for DECFREFing temporary.
