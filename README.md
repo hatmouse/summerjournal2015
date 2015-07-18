@@ -25,3 +25,9 @@ Python管理内存的三种方法
 1. 引用计数器机制
 2. 垃圾回收机制
 3. 内存池机制
+
+### 7.18
+完整看了几篇中文和英文的关于Reference Counting的说明，整理了相关文档
+* [Reference Counting in Python](http://edcjones.tripod.com/refcount.html)
+* [引用计数、使用C++编写扩展、提供API接口](http://www.incoding.org/admin/archives/808.html)
+* [Extending Python with C or C++](https://docs.python.org/3.5/extending/extending.html#reference-counts)
