@@ -31,3 +31,9 @@ Python管理内存的三种方法
 * [Reference Counting in Python](http://edcjones.tripod.com/refcount.html)
 * [引用计数、使用C++编写扩展、提供API接口](http://www.incoding.org/admin/archives/808.html)
 * [Extending Python with C or C++](https://docs.python.org/3.5/extending/extending.html#reference-counts)
+
+### 7.20
+整理了一片关于Reference Count的文章
+[Python引用计数(Reference Count) From 简书](http://www.jianshu.com/p/ecea193abec4)
+[Python Reference Count](https://github.com/hatmouse/summerjournal2015/blob/master/Python%20Reference%20Count.md)
+
