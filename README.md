@@ -37,3 +37,6 @@ Python管理内存的三种方法
 * [Python引用计数(Reference Count) From 简书](http://www.jianshu.com/p/ecea193abec4)
 * [Python Reference Count](https://github.com/hatmouse/summerjournal2015/blob/master/Python%20Reference%20Count.md)
 
+### 7.22
+在阅读greenlet的时候，简单阅读了一下如何编写python扩展
+
