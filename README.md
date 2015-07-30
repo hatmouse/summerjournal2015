@@ -14,7 +14,8 @@
 
 >>  **define的格式**<br>
 >>  // Macro to get a random integer with a specified range <br>
->>  #define getrandom(min, max) \ <br>
+>>  #define getrand
+om(min, max) \ <br>
 >>  ((rand()%(int)(((max) + 1)-(min)))+ (min))
 
 ### 7.13
@@ -39,4 +40,5 @@ Python管理内存的三种方法
 
 ### 7.22
 在阅读greenlet的时候，简单阅读了一下如何编写python扩展
-
+### 7.28 7.29.7.30
+分析greenlet源码，整理一篇分析文章
